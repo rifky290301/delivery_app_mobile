@@ -1,0 +1,9 @@
+const String svgIcon = "assets/icons/";
+const String svgIconNotification = "${svgIcon}notification/";
+const String imagePath = "assets/images/";
+const String imagePathPromo = "${imagePath}promo";
+const String imagePathRestaurant = "${imagePath}restaurant";
+const String svgPath = "assets/images/";
+const String imagesLogo = "assets/logo/";
+const String svgLogo = imagesLogo;
+const String defaultStr = "-";
