@@ -50,40 +50,40 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Find your Comfort Food here`
+  /// `Find your Comfort\nFood here`
   String get title_onboarding_2 {
     return Intl.message(
-      'Find your Comfort Food here',
+      'Find your Comfort\nFood here',
       name: 'title_onboarding_2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Here You Can find a chef or dish for every taste and color. Enjoy!`
+  /// `Here You Can find a chef or dish for\nevery taste and color. Enjoy!`
   String get sub_title_onboarding_2 {
     return Intl.message(
-      'Here You Can find a chef or dish for every taste and color. Enjoy!',
+      'Here You Can find a chef or dish for\nevery taste and color. Enjoy!',
       name: 'sub_title_onboarding_2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Food Ninja is Where Your Comfort Food Lives`
+  /// `Food Ninja is Where Your\nComfort Food Lives`
   String get title_onboarding_3 {
     return Intl.message(
-      'Food Ninja is Where Your Comfort Food Lives',
+      'Food Ninja is Where Your\nComfort Food Lives',
       name: 'title_onboarding_3',
       desc: '',
       args: [],
     );
   }
 
-  /// `Enjoy a fast and smooth food delivery at your doorstep`
+  /// `Enjoy a fast and smooth food delivery\nat your doorstep`
   String get sub_title_onboarding_3 {
     return Intl.message(
-      'Enjoy a fast and smooth food delivery at your doorstep',
+      'Enjoy a fast and smooth food delivery\nat your doorstep',
       name: 'sub_title_onboarding_3',
       desc: '',
       args: [],
@@ -135,6 +135,16 @@ class S {
     return Intl.message(
       'Sign Up For Free',
       name: 'sign_up',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login To Your Account`
+  String get login_to_your_account {
+    return Intl.message(
+      'Login To Your Account',
+      name: 'login_to_your_account',
       desc: '',
       args: [],
     );

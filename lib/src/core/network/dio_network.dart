@@ -12,11 +12,11 @@ class DioNetwork {
   static late Dio retryAPI;
 
   static void initDio() {
-    appAPI = Dio(baseOptions(apiUrl));
+    appAPI = Dio(baseOptions(NetworkConstant.apiUrl));
     appAPI.interceptors.add(loggerInterceptor());
     appAPI.interceptors.add(appQueuedInterceptorsWrapper());
 
-    retryAPI = Dio(baseOptions(apiUrl));
+    retryAPI = Dio(baseOptions(NetworkConstant.apiUrl));
     retryAPI.interceptors.add(loggerInterceptor());
     retryAPI.interceptors.add(interceptorsWrapper());
   }
@@ -97,11 +97,12 @@ class DioNetwork {
     Map<String, dynamic> headers = Helper.getHeaders();
 
     return BaseOptions(
-        baseUrl: url,
-        validateStatus: (s) {
-          return s! < 300;
-        },
-        headers: headers..removeWhere((key, value) => value == null),
-        responseType: ResponseType.json);
+      baseUrl: url,
+      validateStatus: (s) {
+        return s! < 300;
+      },
+      headers: headers..removeWhere((key, value) => value == null),
+      responseType: ResponseType.json,
+    );
   }
 }

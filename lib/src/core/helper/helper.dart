@@ -5,10 +5,12 @@ import 'package:delivery_app_mobile/src/shared/domain/entities/language_enum.dar
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Helper {
+  Helper._();
+
   /// Get language
   static LanguageEnum getLang() {
     LanguageEnum? lang;
-    lang = sl<AppSharedPrefs>().getLang();
+    lang = sl<AppSharedPrefs>().getLang;
     lang = lang ?? LanguageEnum.en;
     return lang;
   }
@@ -33,8 +35,8 @@ class Helper {
     return "$imagePathRestaurant$name";
   }
 
-  static String getSvgPath(String name) {
-    return "$svgPath$name";
+  static String getSvgImages(String name) {
+    return "$svgImages$name";
   }
 
   static String getImagesLogo(String name) {
@@ -46,21 +48,19 @@ class Helper {
   }
 
   /// Get vertical space
-  static double getVerticalSpace() {
-    return 10.h;
-  }
+  // static double getVerticalSpace() {
+  //   return 10.h;
+  // }
 
   /// Get horizontal space
-  static double getHorizontalSpace() {
-    return 10.w;
-  }
+  // static double getHorizontalSpace() {
+  //   return 10.w;
+  // }
 
   /// Get Dio Header
   static Map<String, dynamic> getHeaders() {
     return {}..removeWhere((key, value) => value == null);
   }
 
-  static bool isDarkTheme() {
-    return sl<AppSharedPrefs>().getIsDarkTheme();
-  }
+  static bool get isDarkTheme => sl<AppSharedPrefs>().getIsDarkTheme;
 }

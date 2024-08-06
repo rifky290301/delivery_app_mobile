@@ -7,8 +7,10 @@ class AppSharedPrefs {
 
   AppSharedPrefs(this._preferences);
 
-  /// __________ Language __________ ///
-  LanguageEnum? getLang() {
+  //* ===============================================================
+  //* Set language in app
+  //* ===============================================================
+  LanguageEnum? get getLang {
     String? data = _preferences.getString(lang);
     if (data == null) {
       return LanguageEnum.en;
@@ -16,16 +18,25 @@ class AppSharedPrefs {
     return LanguageEnum.values.firstWhere((element) => element.name == data);
   }
 
-  void setLang(LanguageEnum language) {
+  set setLang(LanguageEnum language) {
     _preferences.setString(lang, language.name);
   }
 
-  /// __________ Dark Theme __________ ///
-  bool getIsDarkTheme() {
-    return _preferences.getBool(theme) ?? false;
+  //* ===============================================================
+  //* Set setting dark or light mode
+  //* ===============================================================
+  bool get getIsDarkTheme => _preferences.getBool(theme) ?? false;
+
+  set setDarkTheme(bool isDark) {
+    _preferences.setBool(theme, isDark);
   }
 
-  void setDarkTheme(bool isDark) {
-    _preferences.setBool(theme, isDark);
+  //* ===============================================================
+  //* Keep token JWT for use in http request
+  //* ===============================================================
+  String get getToken => _preferences.getString(token) ?? '';
+
+  set setToken(String tokenJWT) {
+    _preferences.setString(token, tokenJWT);
   }
 }

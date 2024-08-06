@@ -28,6 +28,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Lupa kata sandi ?"),
         "login": MessageLookupByLibrary.simpleMessage("Masuk"),
+        "login_to_your_account":
+            MessageLookupByLibrary.simpleMessage("Masuk ke akun Anda"),
         "next": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
         "or_continue":
             MessageLookupByLibrary.simpleMessage("Atau Lanjutkan Dengan"),
@@ -37,12 +39,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "sign_up_process_title":
             MessageLookupByLibrary.simpleMessage("Isi bio Anda untuk memulai"),
         "sub_title_onboarding_2": MessageLookupByLibrary.simpleMessage(
-            "Di sini Anda dapat menemukan koki atau hidangan untuk setiap selera dan warna. Menikmati!"),
+            "Di sini Anda dapat menemukan koki atau\nhidangan untuk setiap selera dan warna. Menikmati!"),
         "sub_title_onboarding_3": MessageLookupByLibrary.simpleMessage(
-            "Nikmati pengiriman makanan yang cepat dan lancar di depan pintu Anda"),
+            "Nikmati pengiriman makanan yang cepat dan\nlancar di depan pintu Anda"),
         "title_onboarding_2": MessageLookupByLibrary.simpleMessage(
-            "Temukan Makanan Nyaman Anda di sini"),
+            "Temukan Makanan Nyaman\nAnda di sini"),
         "title_onboarding_3": MessageLookupByLibrary.simpleMessage(
-            "Ninja Makanan adalah Tempat Tinggal Makanan Nyaman Anda")
+            "Ninja Makanan adalah Tempat Tinggal\nMakanan Nyaman Anda")
       };
 }

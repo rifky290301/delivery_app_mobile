@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot Your Password?"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "login_to_your_account":
+            MessageLookupByLibrary.simpleMessage("Login To Your Account"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "or_continue": MessageLookupByLibrary.simpleMessage("Or Continue With"),
         "sign_up": MessageLookupByLibrary.simpleMessage("Sign Up For Free"),
@@ -37,12 +39,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "sign_up_process_title": MessageLookupByLibrary.simpleMessage(
             "Fill in your bio to get started"),
         "sub_title_onboarding_2": MessageLookupByLibrary.simpleMessage(
-            "Here You Can find a chef or dish for every taste and color. Enjoy!"),
+            "Here You Can find a chef or dish for\nevery taste and color. Enjoy!"),
         "sub_title_onboarding_3": MessageLookupByLibrary.simpleMessage(
-            "Enjoy a fast and smooth food delivery at your doorstep"),
-        "title_onboarding_2":
-            MessageLookupByLibrary.simpleMessage("Find your Comfort Food here"),
+            "Enjoy a fast and smooth food delivery\nat your doorstep"),
+        "title_onboarding_2": MessageLookupByLibrary.simpleMessage(
+            "Find your Comfort\nFood here"),
         "title_onboarding_3": MessageLookupByLibrary.simpleMessage(
-            "Food Ninja is Where Your Comfort Food Lives")
+            "Food Ninja is Where Your\nComfort Food Lives")
       };
 }

@@ -106,6 +106,6 @@ flutter:
       fonts:
         - asset: assets/fonts/Inter-SemiBold.ttf
 
-    - family: BentonSans Book
+    - family: Viga-Regular
       fonts:
-        - asset: assets/fonts/Viga-Regular.otf
+        - asset: assets/fonts/Viga-Regular.ttf

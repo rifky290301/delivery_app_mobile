@@ -1,12 +1,16 @@
-const String apiUrl = "";
-const String apiKey = "jahfkdsanfmsdfa,mdfnieoirwjew";
 // const String apiUrl = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/";
 // const String apiKey = "WiRqmPm4mBO4ssOsQL7uWDS0lJO4KviJ";
 
-String getApiKeyPath() {
-  return "?api-key=$apiKey";
-}
+class NetworkConstant {
+  NetworkConstant._();
+  static const String apiUrl = "http://192.168.99.60:8000/";
+  static const String apiKey = "kjfidanekwrpajflds";
 
-String getArticlePath(int period) {
-  return "all-sections/${period.toString()}.json${getApiKeyPath()}";
+  String getApiKeyPath() {
+    return "?api-key=$apiKey";
+  }
+
+  String loginPath() {
+    return "login";
+  }
 }
